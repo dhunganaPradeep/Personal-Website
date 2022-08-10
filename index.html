@@ -8,6 +8,14 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/skins/color-1.css">
+
+    <!-- Style Switcher -->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
         <!-- For font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">            
@@ -36,7 +44,7 @@
         <!-- Home Content -->
             <div class="main-content">
                 <!-- Home section -->
-                <section class="home section">
+                <section class="home section" id="home">
                     <div class="container">
                         <div class="row">
                             <div class="home-info padd-15">
@@ -55,7 +63,7 @@
                 <!-- Home Section End -->
 
                 <!-- About Section -->
-                <section class="about section">
+                <section class="about section" id="about">
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
@@ -173,7 +181,7 @@
                 <!-- About Section End -->
 
                 <!-- Education Section start -->
-                <section class="education section">
+                <section class="education section" id="education">
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
@@ -237,7 +245,7 @@
                 </section>
                 <!-- Education section end -->
                 <!-- Services Section start -->
-                <section  class="service section">
+                <section  class="service section" id="service">
                      <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
@@ -312,7 +320,7 @@
                 <!-- Services Section End -->
 
                 <!-- Contact Section Starts -->
-                    <section class="contact section">
+                    <section class="contact section" id="contact">
                         <div class="container">
                             <div class="row">
                                 <div class="section-title padd-15">
@@ -409,8 +417,27 @@
         <!-- Main content end -->
     </div>
     <!-- Home page End -->
+    <!-- Style Switcher -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas "></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!-- Style switcher end -->
     <!-- Javascript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
 </body>
 </html>

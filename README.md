@@ -1,4 +1,4 @@
-# Pradip Dhungana Portfolio
+# Portfolio
 
 This repo contains code for my website can be acces via 
 
